@@ -1,0 +1,9 @@
+name: Calling reusable workflow
+on: 
+  workflow_dispatch:
+
+jobs:
+  run-reusable_workflow:
+    uses: github.com/Noctalin/gitops/.github/workflows/ex4.yaml@main
+    with:
+      node-version: ${{ vars.NODE_VERSION }}
