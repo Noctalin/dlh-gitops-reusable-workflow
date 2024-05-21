@@ -4,6 +4,6 @@ on:
 
 jobs:
   run-reusable_workflow:
-    uses: github.com/Noctalin/gitops/.github/workflows/ex4.yaml@main
+    uses: Noctalin/gitops/.github/workflows/ex4.yaml@main
     with:
       node-version: ${{ vars.NODE_VERSION }}
